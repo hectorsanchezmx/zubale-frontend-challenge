@@ -1,9 +1,12 @@
 # Zubale Mobile Challenge 
 
-At Zubale we are all about raising people up and inspiring people. We need a great way to track inspirational quotes. So we need you to write an App that will let people suggest quotes and vote on the ones they like. 
+At Zubale we are all about raising people up and inspiring people. We need a great way to track inspirational quotes. So we need you to write an App that will let people suggest quotes and vote on the ones they like the best. 
 
-If you do a great job we have existing prizes. And the best of the best will get a chance to come work with us. 
+We hope doing this is fun, but we are also offering prizes for the best entries. The very best will be given a chance to come work with us, as we harness people's smart phones to change the world. 
 
+This challenge is self-paced, however, we do have a meetup scheduled in the near future where we will be reviewing solutions and offering prizes. Please RSVP to attend here: https://docs.google.com/forms/d/1RwK22DIWBfLrz3UCF5bv-HXtxv-zGs9a9kjmL3vjoxw/edit?usp=sharing
+
+Guadalajara: Thursday, April 25th from 7-10pm
 The requirements are:
 1. Clone this repo and create your own branch
 2. Build an Android App 
