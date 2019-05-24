@@ -21,8 +21,10 @@ class Quotes extends React.Component {
   }
 
   async componentDidMount() {
-    const quotes = await AsyncStorage.getItem('quotes') || [];
-    this.setState({ quotes: JSON.parse(quotes) })
+    const newQuotes = [{ id: '1', quote: 'Existing Quote', votes: 0 }]
+    await AsyncStorage.setItem('quotes', JSON.stringify(newQuotes));
+    const quotes = await AsyncStorage.getItem('quotes');
+    this.setState({ quotes: quotes ? JSON.parse(quotes) : [] })
   }
 
   showModal = () => {
@@ -44,7 +46,7 @@ class Quotes extends React.Component {
       const { quote } = this.state;
       const id = uuid.v4();
       const quotes = await AsyncStorage.getItem('quotes') || [];
-      const parsedQuotes = JSON.parse(quotes);
+      const parsedQuotes = quotes ? JSON.parse(quotes) : [];
       console.log('quotes', parsedQuotes)
       parsedQuotes.push({ id, quote, votes: 0 });
       this.setState({ quotes: parsedQuotes })
